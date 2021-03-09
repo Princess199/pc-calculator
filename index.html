@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"> -->
+</head>
+<body>
+   
+    <div class="centercalcy">
+        <form name="calcy">
+            <input type="text" name="" value="calculator" id="app_name">
+            <div class="Ayo">
+                <!-- <div id="navbar">
+                    <a href="#" class="menu-bars" id="show-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+                <nav id="navbar">
+                    <ul class="nav-menu-items">
+                        <div id="nav-toggle">
+                            <a href="#" class="menu-bars" id="hie-menu">3
+                                <i class="material-icons">menu</i>
+                            </a>
+                        </div>4 -->
+                        <!-- <div class="nav-section">
+                                <h2>Calculator</h2>
+                                <li class="nav-text"> <a href="#"><i class="fas fa-calculator"></i>Standard</a></li>
+                                <li class="nav-text"> <a href="#"><i class="fas fa-flask"></i>Scientific</a></li>
+                                <li class="nav-text"> <a href="#"> <i class="material-icons">code</i>Programmer</a></li>
+                                <li class="nav-text"> <a href="#"> <i class="material-icons">date_range</i>Date Calculation</a></li>
+                                <h2>Converter</h2>
+                                <li class="nav-text"> <a href="#"><i class="fas fa-coins"></i>Currency</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-cube"></i>Volume</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-ruler"></i>Length</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-weight-hanging"></i>Weight and Mass</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-thermometer-full"></i>Temperature</a></li>
+                                <li class="nav-text"> <a href="#"><i class="fas fa-fire"></i>Energy</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-vihara"></i>Area</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-calculator"></i>Speed</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-calculator"></i>Time</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-calculator"></i>Power</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-calculator"></i>Data</a></li>
+                                <li class="nav-text"><a href="#"><i class="fas fa-calculator"></i>Pressure</a></li>
+                                <a href="#"><i class="fas fa-calculator"></i>Angle</a></li>
+                        </div>
+                    </ul>
+                </nav> -->
+
+
+
+
+
+                <h1>Standard</h1>
+            </div>
+
+            <input type="text" name="answer" id="display_answer">
+            <div class="layer3">
+                <input type="button" name="" class="oper" value="MC" onclick="calcy.answer.value +=''"> 
+                <input type="button" name="" class="oper" value="MR" onclick="calcy.answer.value +=''"> 
+                <input type="button" name="" class="main_num" value="M+" onclick="calcy.answer.value +=''"> 
+                <input type="button" name="" class="main_num" value="M-" onclick="calcy.answer.value +=''"> 
+                <input type="button" name="" class="main_num" value="MS" onclick="calcy.answer.value +=''"> 
+                <input type="button" name="" class="oper" value="M" onclick="calcy.answer.value +=''"> 
+
+            </div>
+            <div class="layer2">
+                <input type="button" name="" class="oper" value="%" onclick="calcy.answer.value +='%'"> 
+                <input type="button" name="" class="oper"  value="DEL" onclick="calcy.answer.value = calcy.answer.value =calcy.answer.value.substring(0,calcy.answer.value.length - 1)">
+                <input type="button" name="" class="oper" value="C" id="clearbutton" onclick="calcy.answer.value= ''">
+                <input type="button" name="" class="oper" value="/" onclick="calcy.answer.value +='/'"> 
+               
+            </div>
+
+
+            <div class="layer1">
+                <input type="button" name="" class="main_num" value="7" onclick="calcy.answer.value +='7'"> 
+                <input type="button" name="" class="main_num" value="8" onclick="calcy.answer.value +='8'"> 
+                <input type="button" name="" class="main_num" value="9" onclick="calcy.answer.value +='9'"> 
+                <input type="button" name="" class="oper" value="*" onclick="calcy.answer.value+= '*'">
+            </div>
+            
+            <div class="layer1">
+                <input type="button" name="" class="main_num" value="4" onclick="calcy.answer.value +='4'"> 
+                <input type="button" name="" class="main_num" value="5" onclick="calcy.answer.value +='5'"> 
+                <input type="button" name="" class="main_num" value="6" onclick="calcy.answer.value +='6'"> 
+                <input type="button" name="" class="oper" value="-" onclick="calcy.answer.value+= '-'">
+                
+            </div>
+            
+            <div class="layer1">
+                <input type="button" name="" class="main_num" value="1" onclick="calcy.answer.value +='1'"> 
+                <input type="button" name="" class="main_num" value="2" onclick="calcy.answer.value +='2'"> 
+                <input type="button" name="" class="main_num" value="3" onclick="calcy.answer.value +='3'"> 
+                <input type="button" name="" class="oper" value="+" onclick="calcy.answer.value+= '+'">
+               
+            </div>
+         
+            <div class="layer1">
+                <input type="button" name="" class="oper" value="+/-" onclick="calcy.answer.value +='-'"> 
+                <input type="button" name="" class="main_num" value="0" onclick="calcy.answer.value +='0'"> 
+                <input type="button" name="" class="oper" value="." onclick="calcy.answer.value +='.'"> 
+                <input type="button" name="" class="Ayomi" value="=" onclick="calcy.answer.value = eval(calcy.answer.value) ">
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>

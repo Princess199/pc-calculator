@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('screen.png');
+    background-size: 100% 100%;
+}
+#navbar{
+    background-color: #212121;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.menu-bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+#nav-mwenu{
+    background-color: #212121;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+#nav-menu.active{
+    left: 0;
+    transition: 350ms;
+}
+.nav-text{
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    height: 50px;
+    padding: 1rem;
+}
+.nav-text a{
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.nav-text:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.nav-menu-items{
+    width: 100%;
+}
+.nav-icon{
+    padding-right:  1rem;
+    color: #909090;
+}
+#navbar-toggle{
+    background-color: #212121;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#navbar-toggle h2{
+    color: #fff;
+    font-family: 'oswald', sans-serif;
+}
+#navbar-toggle a {
+    text-decoration: none;
+}
+.fas-bars{
+    color: #fff;
+}
+.nav-section{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.centercalcy {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 300px;
+    height: 540px;
+    box-shadow: 0 0 10px 1px grey;
+}
+
+#app_name {
+    width: inherit;
+    font-size: 0.8rem;
+    padding: 2px 0 2px 10px;
+    background-color: white;
+    color: #303030;
+    border: none;
+    outline: none;
+    font-family: 'open sans', sans-serif;
+}
+
+.Ayo {
+    width: inherit;
+    font-size: 0.8rem;
+    padding: 2px 0 2px 10px;
+    background-color: white;
+    color: #303030;
+    border: none;
+    outline: none;
+    font-family: 'open sans', sans-serif;
+}
+
+#display_answer {
+    width: inherit;
+    height: 160px;
+    background-color: white;
+    font-size: 2rem;
+    color: #303030;
+    text-align: right;
+    outline: none;
+    background-origin: none;
+}
+
+.layer1 {
+    width: inherit;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.layer2 {
+    width: inherit;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.layer3 {
+    width: inherit;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    flex: 1;
+    font-size: 1.4rem;
+    color: white;
+    border: 1px solid #504f4f;
+    outline: none;
+}
+
+.main_num {
+    background-color: white;
+    color: #303030;
+}
+
+.oper {
+    background-color: whitesmoke;
+    color: #303030;
+}
+.Ayomi{
+    background-color: wheat;
+    
+}
+
+#clearbutton {
+    font-size: 1rem;
+}
+
+input:hover {
+    background-color: #cac8c8;
+    border: 1px solid grey;
+}
